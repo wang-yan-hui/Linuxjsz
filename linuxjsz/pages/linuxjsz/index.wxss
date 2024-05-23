@@ -1,0 +1,81 @@
+/**index.wxss**/
+
+page {
+  padding-top: 10rpx;
+  background-color: #86c79c;
+  padding-bottom: 50rpx;
+}
+
+.container {
+  font-family: PingFang SC;
+}
+
+.power {
+  margin-top: 30rpx;
+  border-radius: 5px;
+  background-color: white;
+  width: 93%;
+  padding-bottom: 1rpx;
+}
+
+.power_info {
+  display: flex;
+  padding: 30rpx 25rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.power_info_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.power_info_text_title {
+  margin-bottom: auto;
+  font-weight: 400;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  font-family: "PingFang SC";
+  color: #000;
+}
+
+.power_info_text_tip {
+  color: rgba(59, 2, 2, 0.6);
+  font-size: 28rpx;
+}
+
+.power_item {
+  padding: 30rpx 25rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.power_item_title {
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.power_item_icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.line {
+  width: 95%;
+  margin: 0 auto;
+  height: 2rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pagination {  
+  display: flex;  
+  justify-content: space-between; /* 使元素在行内均匀分布 */  
+  align-items: center; /* 使元素在交叉轴上居中 */  
+  padding: 10px 0; /* 上下内边距 */  
+}  
+  
+.pagination button {  
+  /* 按钮样式 */  
+  margin: 0 5px; /* 根据需要添加左右边距 */  
+}

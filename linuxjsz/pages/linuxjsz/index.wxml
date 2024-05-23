@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="power" wx:key="title" wx:for="{{powerList}}" wx:for-item="power" wx:key="index">
+    <view class="power_info" data-index="{{index}}" data-type="{{ power.type }}" bindtap="onClickPowerInfo">
+      <view class="power_info_text">
+        <view class="power_info_text_title">
+          {{power.title}}
+        </view>
+        <view class="power_info_text_tip">{{power.tip}}</view>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+    <view wx:if="{{power.showItem}}">
+      <view wx:key="title" wx:for="{{power.item}}">
+        <view class="line"></view>
+        <view class="power_item" bindtap="jumpPage" data-type="{{ item.type }}" data-page="{{item.page}}">
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 翻页控件 
+  <view class="pagination">  
+    <button bindtap="prevPage" disabled="{{currentPage === 1}}">上一页</button>  
+    <text>{{currentPage}}/{{totalPages}}</text>  
+    <button bindtap="nextPage" disabled="{{currentPage === totalPages}}">下一页</button>
+  </view> --> 
+</view>
